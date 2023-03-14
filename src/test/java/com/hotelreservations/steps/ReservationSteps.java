@@ -28,7 +28,7 @@ public class ReservationSteps {
         bookingResponse = reservationService.createBooking();
     }
 
-    @Then("Rezervasyon basarili sekildi olusturuldu")
+    @Then("Rezervasyon basarili sekilde olusturuldu")
     public void reservationAssertions() {
         Assertions.assertEquals("Burhan", bookingResponse.getBooking().getFirstname());
         Assertions.assertEquals("Aydın", bookingResponse.getBooking().getLastname());
